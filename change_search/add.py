@@ -1,4 +1,4 @@
-from options import database
+from import_export.options import database
 
 def add():
     # здесь нужно спросить поля и добавить новые данные

@@ -1,4 +1,4 @@
-from options import database
+from import_export.options import database
 
 def delete():
     data_for_del = input('Введите данные для удаления в формате: Фамилия;Имя;Отчество.\n'
