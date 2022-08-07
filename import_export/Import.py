@@ -1,7 +1,7 @@
 import os
 import pandas as pd
-from options import database
-import Export as ab_export
+from import_export.options import database
+from import_export import Export as ab_export
 
 #добавляет в текущий файл новые данные
 #ab_import.import_file("fio_import.csv")

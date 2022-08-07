@@ -1,6 +1,6 @@
 import pandas as pd
-import Import as ab_import
-from options import database
+from import_export import Import as ab_import
+from import_export.options import database
 
 #для импорта-экспорта нужен pandas: pip install pandas
 
@@ -52,7 +52,7 @@ def export_data():
     while mode not in supported_export:
         mode = input("Введите режим экспорта (" + ", ".join(supported_export) + "):")
 
-    filename = input("Введите имя файла для экспорта:")
+    filename = input("Введите полное имя файла с указанием папки для экспорта:")
     export_file(filename, mode)
     print(f"Данные были экспортирваны в {filename}")
     return
